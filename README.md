@@ -391,4 +391,4 @@ tecnologias.map(function(tech){
 })
 ```
 
->forEach solo te permite acceder y enlistar cada elemento de un arreglo, an cambio map permite crear un nuevo
+>forEach solo te permite acceder y enlistar cada elemento de un arreglo, en cambio map permite crear un arreglo nuevo
