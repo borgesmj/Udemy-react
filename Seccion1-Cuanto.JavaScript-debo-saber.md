@@ -665,4 +665,89 @@ heading.addEventListener('click', () => {
 ```
 [mas informacion](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
 
-addEventListener no se puede asociar a multiples elementos con querySelectorAll
+**Nota**: addEventListener no se puede asociar a multiples elementos con querySelectorAll
+
+## Eventos en el DOM - inputs
+
+`todos los elementos de HTML pueden ser seleccionados por medio de querySelector semejante a CSS`
+
+Eventos de los inputs
+```
+addEventListener('input', function(){
+    console.log('escribiendo')
+})
+```
+
+```
+addEventListener('input', function(e){
+    console.log(e)
+})
+
+```
+>e es el registro del evento y te refleja todos los atributos del evento y nos interesa el target dentro del evento, para luego acceder al value, que quedaria asi
+```
+addEventListener('input', function(e){
+    console.log(e.target.value)
+})
+```
+>De esta manera se va validando el valor en tiempo real lo que el usuario va poniendo en el input
+
+```
+const inputPassword = document.querySelector(.password')
+inputPassword.addEventListener('input', funcionPassword)
+function funcionPassword(e){
+    inputPassword.type = 'text'
+    setTimeOut(() =>{
+        inputPassword.type = 'password
+    }, 1000);
+}
+```
+
+## Eventos del DOM - Submit
+[Mas informacion](https://developer.mozilla.org/es/docs/Learn/Forms/Your_first_form)
+
+## Generando codigo HTML con JavaScript
+esto se crea con document.createElement
+```
+const alerta = document.createElement('DIV')
+alerta.classList.add('alerta')
+```
+
+## Imports y Exports
+
+Esto ayuda a crear varios archivos JS para funciones o datos
+
+se coloca export default, por ejemplo
+
+```
+function sumar(numero1, numero2){
+    return numero1 + numero2
+}
+
+export default sumar
+```
+
+en el archivo donde se va a importar
+
+> import sumar from '/ubicaciondelarchivo'
+const resultado sumar(20,30)
+console.log(resultado)
+
+se debe agregar en al tag script un type:"module"
+
+Solo se puede Exportar una funcion por archivo cuando es por Default
+
+si se requiere exportar varias funciones a la vez. se usa llaves
+
+export {
+    sumar,
+    restar
+}
+
+y en el archivo a importar
+> import {sumar} from '/ubicaciondelarchivo'
+
+## Fetch API
+consumir un servicio o datos en otro servidor
+[{Jsom}Placeholder](https://jsonplaceholder.typicode.com/)
+
