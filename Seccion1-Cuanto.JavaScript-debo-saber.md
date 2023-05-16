@@ -781,3 +781,29 @@ const consultarAPI = async () => {
 }
 consultarAPI()
 ```
+
+## Multiples Async / Await promises
+```
+const url= "https://jsonplaceholder.typicode.com/comments"
+const url2= "https://jsonplaceholder.typicode.com/photos"
+const consultarAPI = async () => {
+    const [respuesta, respuesta2] = await Promise.all([ fetch(url), fetch(url2) ])
+
+    const resultado = await respuesta.json()
+    const resultado2 = await respuesta2.json()
+    console.log(resultado)
+    console.log(resultado2)
+}
+consultarAPI()
+```
+
+##Template string
+Es una forma de concatenar variables con string
+
+```
+const producto = "Tablet de 12 pulgadas"
+const precio = 400
+const marca = 'Orange'
+
+console.log(`${producto}. Precio: $${precio}. Marca: ${marca}`)
+```
