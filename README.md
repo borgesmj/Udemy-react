@@ -348,3 +348,25 @@ console.log(nuevoArray)
 ```
 >
 >Metodos como array.pop y array.shift no se deben utlizar en React, porque modifican el arreglo original
+
+### Reemplazar elementos 
+
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+tecnologias[0] = 'GraphQL'
+console.log(tecnologias)
+```
+>este siguiente metodo no se puede utilizar porque modifica el arreglo original
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const nuevoArray = tecnologias.map ( function (tech){
+    if(tech === 'HTML'){
+        return 'GraphQL'
+    } else {
+        return tech 
+    }
+})
+console.log(nuevoArray)
+```
+>Este metodo no modifica el arreglo original, este **SI** es permitido en React
+
