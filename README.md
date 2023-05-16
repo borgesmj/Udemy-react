@@ -103,4 +103,43 @@ Variable de tipo nulo
 
 [mas informacion de las variables](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures)
 
-## 5. 
+## 5. Introduccion a objetos
+un objeto puede almacenar una gran cantidad de informacion
+
+ejemplo
+```
+const nombre = "tablet"
+const precio = 300
+const disponible = true
+```
+se puede simplificar de esta manera
+```
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
+```
+
+las propiedades se colocan con dos puntos (:), a la izquierda de los puntos está la llave, el nombre de la propiedad y a la derecha el valor, si el objeto lleva mas de una pripiedad, debe llevar una coma (,).
+
+de esta manera, en vez de tener tres variables para un mismo producto, se tiene una sola
+
+```
+console.log(producto) // {nombre: 'tablet', precio: 300, disponible: true}
+console.table(producto)
+```
+
+Para acceder a las propiedades, se usa la sintaxis del punto (.)
+
+```
+console.log(producto.nombre) // tablet
+```
+
+>por medio de la sintaxis del punto, se puede acceder a muchas pripiedades de otros elementos de JavaScript
+
+```
+//colocar en la consola
+console
+//nos arroja todas las propiedades de vista de consola
+``` 
