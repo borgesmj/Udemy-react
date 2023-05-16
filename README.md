@@ -349,7 +349,7 @@ console.log(nuevoArray)
 >
 >Metodos como array.pop y array.shift no se deben utlizar en React, porque modifican el arreglo original
 
-### 10. Destructuring de los Array
+## 10. Destructuring de los Array
 ```
 const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
 const [html, nodejs] = tecnologias
