@@ -637,3 +637,7 @@ const tarjeta = true
 saldo > pagar ? console.log('puedes pagar con saldo') : tarjeta ? console.log('puedes pagar con tarjeta') : console.log('no puedes pagar') // puedes pagar con tarjeta
 ```
 
+##Scope de variables 
+alcance de variables
+* Alcance Local (se declaran dentro de una funcion, y solo existe cuando se ejecuta dicha funcion)
+* Alcance Global (se declara en el script y se ejecuta cada vez que se llama en el script)
