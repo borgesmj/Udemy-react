@@ -614,3 +614,26 @@ Es un if en una sola linea
 sintaxis es 
 
 `condicion ? operacion si la condicion se cumple : operacion si la condicion no se cumple`
+
+```
+const autenticado = true
+autenticado ? console.log('usuario autenticado') : console.log('usuario no autenticado, dirigir hacia el login') //usuario autenticado
+```
+
+```
+const autenticado = false
+autenticado ? console.log('usuario autenticado') : console.log('usuario no autenticado, dirigir hacia el login') //usuario no autenticado, dirigir hacia el login
+```
+```
+const autenticado = true
+!autenticado ? console.log('usuario autenticado') : console.log('usuario no autenticado, dirigir hacia el login') //usuario no autenticado, dirigir hacia el login (el signo ! niega la variable)
+```
+Doble ternario
+
+```
+const saldo = 400
+const pagar = 500
+const tarjeta = true
+saldo > pagar ? console.log('puedes pagar con saldo') : tarjeta ? console.log('puedes pagar con tarjeta') : console.log('no puedes pagar') // puedes pagar con tarjeta
+```
+
