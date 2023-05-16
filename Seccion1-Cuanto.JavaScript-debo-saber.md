@@ -649,3 +649,20 @@ para seleccionar elelemntos se utiliza `querySelector` o `querySelectorAll`
 * querySelector te trae de 0 a maximo un elemento 
 - querySelectorAll te trae todos los elementos que coincida con la busqueda
 
+## Manipular elementos HTML con JavaScript
+```
+const heading = document.querySelector('#heading')
+heading.textContent = 'Un nuevo heading'
+//esto imprime el nuevo texto en el documento HTML
+```
+
+## Eventos en el DOM
+```
+const heading = document.querySelector('#heading')
+heading.addEventListener('click', () => {
+    console.log('diste click en heading')
+}) //
+```
+[mas informacion](https://developer.mozilla.org/es/docs/Web/API/EventTarget/addEventListener)
+
+addEventListener no se puede asociar a multiples elementos con querySelectorAll
