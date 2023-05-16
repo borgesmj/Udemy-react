@@ -365,7 +365,7 @@ console.log(var5) // 'NodeJs'
 
 >Se colocan comas con espacios vacios para que imprima el valor que queremos
 
-### Iteradores de arreglos
+## 11.Iteradores de arreglos
 
 **forEach**
 ```
