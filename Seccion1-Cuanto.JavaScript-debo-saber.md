@@ -579,3 +579,26 @@ const arrayMap = tecnologias.map(tech => tech)
 console.log(arrayMap)
 ```
 [Para conocer que metodo muta o que no](https://doesitmutate.xyz/).
+
+## Condicionales if
+
+```
+const disponible = 4000
+const retirar = 10000
+
+if (disponible > retirar){
+    console.log('si puedes retirar')
+} else {
+    console.log('Lo siento, no puedes retirar')
+} // Lo siento, no puedes retirar
+```
+
+Operadores
+`
+> Mayor que
+< Menor que
+>= Mayor o igual que
+<= Menor o igual que
+`
+
+##
