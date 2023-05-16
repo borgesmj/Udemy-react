@@ -797,7 +797,7 @@ const consultarAPI = async () => {
 consultarAPI()
 ```
 
-##Template string
+## Template string
 Es una forma de concatenar variables con string
 
 ```
