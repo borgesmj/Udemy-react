@@ -2,6 +2,6 @@
 ** Notas del curso de MERN en Udemy **
 
 
-| Seccion       | Are           |
+| Seccion       | Link          |
 | ------------- |:-------------:|
 |¿Cuanto JavaScript debo saber?|[](https://github.com/borgesmj/Udemy-react/blob/main/Seccion1-Cuanto.JavaScript-debo-saber.md)|
