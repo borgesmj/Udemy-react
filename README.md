@@ -1,4 +1,4 @@
-# MERN (MongoDB, Express, React, NodeJs)
+# MERN (MongoDB, Express, React, NodeJs) :desktop_computer:
 ** Notas del curso de MERN en Udemy **
 
 
