@@ -1,2 +1,2 @@
-# Udemy-react
-Notas del curso de MERN en Udemy 
+# MERN (MongoDB, Express, React, NodeJs)
+**Notas del curso de MERN en Udemy**
