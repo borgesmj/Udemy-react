@@ -1,7 +1,7 @@
 # MERN (MongoDB, Express, React, NodeJs)
 **Notas del curso de MERN en Udemy**
 
-## ¿Cuanto JavaScript debo saber?
+# ¿Cuanto JavaScript debo saber?
 No tiene que saberse todo de Javascript para aprender React
 *variables
 *funciones
@@ -43,13 +43,13 @@ Desde el momento que se crea una variable, tiene el tipo undefined (si no tiene 
 ```
 let cliente
 console.log(cliente) //undefined
-console.log(typeof clinete) //undefined
+console.log(typeof cliente) //undefined
 ```
 
 ```
 let cliente = 20
 console.log(cliente) //20
-console.log(typeof clinete) //number
+console.log(typeof cliente) //number
 ```
 En JavaScript el tipo de la variable se almacena en el valor y no en la variable como en otros lenguajes de programacion
 
@@ -74,3 +74,30 @@ console.log(typeof numero3) //number
 
 >Los numeros no llevan comillas, cuando tienen comillas, son string
 
+### String o cadena de texto
+Se utilizan para representar un texto en pantalla, se coloca un valor entre comillas dobles (") o comillas simples ('), no se pueden mezclar
+
+### BigInt 
+Se utiliza para representar numeros muy grandes
+
+```
+const numeroGrande = BigInt(67457364786537649745908754875498)
+console.log(typeof numeroGrande)
+```
+
+>Los numeros BigInt no se pueden mezclar los numeros normales con BigInt, a menos que se haga una conversion
+
+```
+const numeroGrande = BigInt(67457364786537649745908754875498)
+const numero = 10
+console.log(numero + Number(numeroGrande)) //6.745736478653765e+31
+```
+
+### Symbol
+La caracteristica principal del symbol es que es un dato UNICO
+
+###Null
+
+Variable de tipo nulo
+
+[mas informacion de las variables](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures)
