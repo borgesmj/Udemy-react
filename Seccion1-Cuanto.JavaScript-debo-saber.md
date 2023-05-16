@@ -611,4 +611,5 @@ Comparacion Estricta (===) este revisa valor y tipo de dato
 
 ## Condicionales - Ternarios
 Es un if en una sola linea
-sintaxis es ` condicion ? operacion si la condicion se cumple : operacion si la condicion no se cumple`
+sintaxis es 
+` condicion ? operacion si la condicion se cumple : operacion si la condicion no se cumple`
