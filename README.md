@@ -349,24 +349,46 @@ console.log(nuevoArray)
 >
 >Metodos como array.pop y array.shift no se deben utlizar en React, porque modifican el arreglo original
 
-### Reemplazar elementos 
+### 10. Destructuring de los Array
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const [html, nodejs] = tecnologias
+console.log(nodejs) // 'CSS'
+```
 
+>en el destructuring de array se extrae el indice, mas no el valor, si se quiere imprimir NodeJS, que está al final se utiliza
 ```
 const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
-tecnologias[0] = 'GraphQL'
-console.log(tecnologias)
+const [ , , , ,var5] = tecnologias
+console.log(var5) // 'NodeJs'
 ```
->este siguiente metodo no se puede utilizar porque modifica el arreglo original
+
+>Se colocan comas con espacios vacios para que imprima el valor que queremos
+
+### Iteradores de arreglos
+
+**forEach**
 ```
-const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
-const nuevoArray = tecnologias.map ( function (tech){
-    if(tech === 'HTML'){
-        return 'GraphQL'
-    } else {
-        return tech 
-    }
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs'] 
+tecnologias.forEach(function(){
+    console.log('ejecutando funcion')
 })
-console.log(nuevoArray)
 ```
->Este metodo no modifica el arreglo original, este **SI** es permitido en React
 
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs'] 
+tecnologias.forEach(function(tech){
+    console.log(tech)
+})
+```
+
+>forEach accede y ejecuta una funcion por cada elemento en el array
+
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs'] 
+tecnologias.map(function(tech){
+    console.log(tech)
+})
+```
+
+>forEach solo te permite acceder y enlistar cada elemento de un arreglo, an cambio map permite crear un nuevo
