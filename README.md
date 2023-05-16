@@ -14,19 +14,19 @@ No tiene que saberse todo de Javascript para aprender React
 *Condicionales
 *Array Methods
 
-##Variables con LET
+## Variables con LET
 En Javascript se puede utilizar VAR, LET, CONST, aunque var no se usa actualmente
 Javascript es tipo dinamico
 Las variables con LET se pueden reasignar
 en JavaScript se utiliza camelCase
 
-##Variables con CONST
+## Variables con CONST
 Const no se puede reasignar
 Const no pueden iniciar sin un valor
 Las variables no pueden ser creadas con numeros o caracteres especiales
 Las variables no pueden tener espacios
 
-##Estructura y tipos de datos
+## Estructura y tipos de datos
 undefined
 object
 Null
