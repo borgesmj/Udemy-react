@@ -173,6 +173,8 @@ console.table(nuevoObjeto)
 
 ## 6. Manipulacion de objetos
 
+
+### Modificando valores
 ```
 //Reescribir valor
 const producto = {
@@ -186,6 +188,9 @@ producto.nombre = "Monitor curvo"
 console.table(producto)
 ```
 
+### Añadiendo propiedades
+
+
 ```
 //Añadir una nueva propiedad
 const producto = {
@@ -196,5 +201,36 @@ const producto = {
 
 producto.imagen = "imagen.jpg"
 console.table(producto)
+```
+### Eliminar Propiedades
 
 ```
+//Eliminar una propiedad
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
+
+delete producto.disponible
+console.table(producto)
+```
+
+### Object freeze
+Si no queremos que nadie modifique el objeto, se coloca:
+
+```
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
+Object.freeze(producto)
+producto.disponible
+console.table(producto)
+```
+### Object Seal
+
+Permite modificar las propiedades existentes, pero no permite añadir ni eliminar
+
+## Destructuring de 2 o mas objetos
