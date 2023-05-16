@@ -392,3 +392,65 @@ tecnologias.map(function(tech){
 ```
 
 >forEach solo te permite acceder y enlistar cada elemento de un arreglo, en cambio map permite crear un arreglo nuevo
+
+## 11. Funciones - Function Declaration
+```
+function sumar(){
+    console.log(2 + 2)
+}
+sumar()
+```
+
+## 12. Funciones - Parametros y parametros default
+```
+function sumar(a, b = 0){
+    console.log( a + b)
+}
+sumar(10, 20) // 30
+sumar(30, 20) // 50
+sumar(20, 40) // 60
+sumar (30) // 30, suma 30 + 0. ya que al no tener un segundo valor, toma el parametro por default declarado al comienzo de la funcion, de 0, si no se hubiese declarado ese valor por default, el resultado seria NaN
+```
+
+### 12. Funciones que retornan valores
+```
+function sumar(a, b = 0){
+    return a + b
+}
+const resultado = sumar(10, 20)
+console.log(resultado)
+```
+
+```
+function sumar(a, b = 0){
+    return [a + b, 'Hola Mundo']
+}
+const [resultado, holaMundo] = sumar(10, 20)
+console.log(resultado)
+console.log(holaMundo)
+```
+### 13. Funciones- function Expression
+```
+const sumar = function(){
+    console.log(2+2)
+}
+sumar()
+```
+>la diferencia entre funcion declaration y function expression es que en la segunda NO se puede mandar a llamar antes de declarar la funcion
+
+```
+sumar()
+function sumar(){
+    console.log(2 + 2)
+} // 4
+```
+
+```
+sumar()
+const sumar = function(){
+    console.log(2+2)
+} // Uncaught SyntaxError: Identifier 'sumar' has already been declared
+```
+
+### 14. Funciones- Arrow Function
+
