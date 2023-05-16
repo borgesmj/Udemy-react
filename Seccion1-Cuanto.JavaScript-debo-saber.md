@@ -641,3 +641,11 @@ saldo > pagar ? console.log('puedes pagar con saldo') : tarjeta ? console.log('p
 alcance de variables
 * Alcance Local (se declaran dentro de una funcion, y solo existe cuando se ejecuta dicha funcion)
 * Alcance Global (se declara en el script y se ejecuta cada vez que se llama en el script)
+
+## Selectores del DOM
+#document en consola hace referencia a todo el documento HTML
+para seleccionar elelemntos se utiliza `querySelector` o `querySelectorAll`
+
+* querySelector te trae de 0 a maximo un elemento 
+- querySelectorAll te trae todos los elementos que coincida con la busqueda
+
