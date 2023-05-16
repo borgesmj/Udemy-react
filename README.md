@@ -97,13 +97,15 @@ console.log(numero + Number(numeroGrande)) //6.745736478653765e+31
 ### Symbol
 La caracteristica principal del symbol es que es un dato UNICO
 
-###Null
+### Null
 
 Variable de tipo nulo
 
 [mas informacion de las variables](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures)
 
 ## 5. Introduccion a objetos
+
+### ¿que es un objeto?
 un objeto puede almacenar una gran cantidad de informacion
 
 ejemplo
@@ -142,4 +144,57 @@ console.log(producto.nombre) // tablet
 //colocar en la consola
 console
 //nos arroja todas las propiedades de vista de consola
+//o
+document
+//nos trae las propiedades del DOM
 ``` 
+### Destructuring de un objeto
+Aparte de acceder a las propiedades, puede crear una variable nueva
+
+```
+const { nombre } = producto
+console.log(nombre)
+```
+
+### Object Literal Enhacement
+Funciona para meter variables que estan fuera del objeto, dentro del objeto
+
+```
+const autenticado = true
+const usuario = "Miguel"
+
+const nuevoObjeto = {
+    autenticado: autenticado
+    usuario: usuario
+}
+
+console.table(nuevoObjeto)
+```
+
+## 6. Manipulacion de objetos
+
+```
+//Reescribir valor
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
+
+producto.nombre = "Monitor curvo"
+
+console.table(producto)
+```
+
+```
+//Añadir una nueva propiedad
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
+
+producto.imagen = imagen.jpg
+console.table(producto)
+
+```
