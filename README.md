@@ -346,6 +346,18 @@ const nuevoArray = tecnologias.filter( function(tech){
 }) 
 console.log(nuevoArray)
 ```
+
+### Modificando elementos del array
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const nuevoArray = tecnologias.map( function(tech){
+    if (tech === 'HTML'){
+        return 'GraphQL'
+    } else {return tech}
+}) 
+console.log(nuevoArray)
+```
+
 >
 >Metodos como array.pop y array.shift no se deben utlizar en React, porque modifican el arreglo original
 
@@ -449,8 +461,39 @@ function sumar(){
 sumar()
 const sumar = function(){
     console.log(2+2)
-} // Uncaught SyntaxError: Identifier 'sumar' has already been declared
+} // Uncaught ReferenceError: sumar is not defined
 ```
 
 ### 14. Funciones- Arrow Function
 
+```
+const sumar = (a, b) => {
+    return 2 + 2
+}
+const resultado = sumar(20, 30)
+console.log(resultado)
+```
+
+>una caracteristica del arrow function, es que cuando tiene una sola linea de return, se puede eliminar las {} y la palabra return despues de la flecha =>
+
+```
+const sumar = (a, b) => a + b
+const resultado = sumar(20, 30)
+console.log(resultado)
+```
+
+>cuando se quiere pasar un solo parametro, se puede eliminar el parentesis
+```
+const sumar = a => a + 30
+const resultado = sumar(20)
+console.log(resultado)
+```
+
+### 15. Arrow function y Array Methods
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+tecnologias.map(function(tech){
+    console.log(tech)
+})
+
+```
