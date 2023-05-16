@@ -1,6 +1,3 @@
-# MERN (MongoDB, Express, React, NodeJs)
-**Notas del curso de MERN en Udemy**
-
 # ¿Cuanto JavaScript debo saber?
 ## ¿Cuanto JavaScript debo saber?
 No tiene que saberse todo de Javascript para aprender React
