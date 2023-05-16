@@ -594,11 +594,10 @@ if (disponible > retirar){
 ```
 
 Operadores
-`
-> Mayor que
-< Menor que
->= Mayor o igual que
-<= Menor o igual que
-`
+
+`> Mayor que`
+`< Menor que`
+`>= Mayor o igual que`
+`<= Menor o igual que`
 
 ##
