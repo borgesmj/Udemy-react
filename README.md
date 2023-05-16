@@ -582,7 +582,3 @@ const arrayMap = tecnologias.map(tech => tech)
 console.log(arrayMap)
 ```
 [Para conocer que metodo muta o que no](https://doesitmutate.xyz/).
-
-1.   First list item
-     - First nested list item
-       - Second nested list item
