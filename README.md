@@ -424,7 +424,7 @@ sumar(20, 40) // 60
 sumar (30) // 30, suma 30 + 0. ya que al no tener un segundo valor, toma el parametro por default declarado al comienzo de la funcion, de 0, si no se hubiese declarado ese valor por default, el resultado seria NaN
 ```
 
-### 12. Funciones que retornan valores
+## 13. Funciones que retornan valores
 ```
 function sumar(a, b = 0){
     return a + b
@@ -441,7 +441,7 @@ const [resultado, holaMundo] = sumar(10, 20)
 console.log(resultado)
 console.log(holaMundo)
 ```
-### 13. Funciones- function Expression
+## 14. Funciones- function Expression
 ```
 const sumar = function(){
     console.log(2+2)
@@ -464,7 +464,7 @@ const sumar = function(){
 } // Uncaught ReferenceError: sumar is not defined
 ```
 
-### 14. Funciones- Arrow Function
+## 15. Funciones- Arrow Function
 
 ```
 const sumar = (a, b) => {
@@ -489,7 +489,7 @@ const resultado = sumar(20)
 console.log(resultado)
 ```
 
-### 15. Arrow function y Array Methods
+## 16. Arrow function y Array Methods
 ```
 const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
 tecnologias.map(function(tech){
