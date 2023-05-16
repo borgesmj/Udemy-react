@@ -253,3 +253,30 @@ console.log(nombreCliente, premium) // Miguel true
 ```
 
 >Si hay variables en dos o mas objetos, que se llamen igual, no se puede hacer destructuring, tomando el mismo nombre de las variables porque daria error, si se podria cambiar el nombre dentro del objeto y del destructuring, pero en casos de variables que vengan de API o base de datos no se puede modificar, asi que se crea un alias temporal "_nombre: nombreCliente_" para tengan nombre distinto
+
+## 7. Unir dos o mas objetos en JavaScript
+
+```
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
+const cliente = {
+    nombre: "Miguel",
+    premium: true
+}
+
+//const nuevoObjeto = Object.assign(producto, cliente) crea un nuevo objeto uniendo los dos anteriores, pero como los dos objetos tienen una misma variable **nombre** toma el ultimo y se pierde datos, tambien modifica los objetos otiginales, asi que este metodo **NO** es recomendable
+
+// const nuevoObjeto2 = {...producto, ...cliente} este metodo NO modifica los objetos originales, pero solo imprime un **nombre** de los dos objetos
+
+const nuevoObjeto2 = {
+    producto: {...producto},
+    cliente: {...cliente}
+}
+console.log(nuevoObjeto2)
+```
+
+>**MUY IMPORTANTE** en react no se deben modificar los objetos
+
