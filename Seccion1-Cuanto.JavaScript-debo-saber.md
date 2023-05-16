@@ -580,7 +580,7 @@ console.log(arrayMap)
 ```
 [Para conocer que metodo muta o que no](https://doesitmutate.xyz/).
 
-## Condicionales if
+## Condicionales - if
 
 ```
 const disponible = 4000
@@ -600,4 +600,15 @@ Operadores
 `>= Mayor o igual que`
 `<= Menor o igual que`
 
-##
+## Condicionales - Comparacion con == y ===
+Comparacion NO estricto (==) este solo revisa por el valor
+Comparacion Estricta (===) este revisa valor y tipo de dato
+
+## Condicionales - condicion && y ||
+
+` || al menos una condicion debe cumplirse`
+` && ambas condiciones deben cumplirse` 
+
+## Condicionales - Ternarios
+Es un if en una sola linea
+sintaxis es ` condicion ? operacion si la condicion se cumple : operacion si la condicion no se cumple`
