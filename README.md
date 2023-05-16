@@ -194,7 +194,7 @@ const producto = {
     disponible: true
 }
 
-producto.imagen = imagen.jpg
+producto.imagen = "imagen.jpg"
 console.table(producto)
 
 ```
