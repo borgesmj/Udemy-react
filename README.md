@@ -280,3 +280,71 @@ console.log(nuevoObjeto2)
 
 >**MUY IMPORTANTE** en react no se deben modificar los objetos
 
+## 8. Introduccion a Arrays
+
+Al igual que un objeto, un array puede tener mucha informacion, al igual que un objeto
+
+```
+const tecnologias = []
+console.log(tecnologias) // []
+```
+
+```
+const tecnologias = [20, 30, true, 'JavaScript', 'React']
+console.log(tecnologias) // (5)[20, 30, true, 'JavaScript', 'React']
+console.log(tecnologias[3]) // JavaScript
+```
+
+un arreglo se puede utlizar en carritos de compras
+
+## 9. Manipulacion de los Array
+
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+console.table(tecnologias)
+```
+
+### Añadir elementos al array 
+añadiendo un nuevo elemento al final
+
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const nuevoArreglo = [...tecnologias, 'GraphQL']
+console.table(tecnologias)
+console.table(nuevoArreglo)
+```
+Añadiendo un nuevo elemento al comienzo
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const nuevoArreglo = ['GraphQL', ...tecnologias]
+console.table(tecnologias)
+console.table(nuevoArreglo)
+```
+>Metodos como array.push y array.unshift no se deben utlizar en React, porque modifican el arreglo original
+
+### Eliminar elementos
+
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const nuevoArray = tecnologias.filter( function(){
+    console.log('desde filter)
+}) 
+```
+>Filter toma una funcion y retorna la cantidad de veces segun el length del array
+
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const nuevoArray = tecnologias.filter( function(tech){
+    console.log(tech)
+}) 
+```
+>Escrito de esta manera, regresa cada uno de los elementos del array, mediante una iteracion
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const nuevoArray = tecnologias.filter( function(tech){
+    return tech !== 'HTML'
+}) 
+console.log(nuevoArray)
+```
+>
+>Metodos como array.pop y array.shift no se deben utlizar en React, porque modifican el arreglo original
