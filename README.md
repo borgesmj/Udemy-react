@@ -2,7 +2,7 @@
 **Notas del curso de MERN en Udemy**
 
 # ¿Cuanto JavaScript debo saber?
-## 1. ¿Cuanto JavaScript debo saber?
+## ¿Cuanto JavaScript debo saber?
 No tiene que saberse todo de Javascript para aprender React
 * variables
 * funciones
@@ -15,19 +15,19 @@ No tiene que saberse todo de Javascript para aprender React
 * Condicionales
 * Array Methods
 
-## 2. Variables con LET
+## Variables con LET
 En Javascript se puede utilizar VAR, LET, CONST, aunque var no se usa actualmente
 Javascript es tipo dinamico
 Las variables con LET se pueden reasignar
 en JavaScript se utiliza camelCase
 
-## 3. Variables con CONST
+## Variables con CONST
 Const no se puede reasignar
 Const no pueden iniciar sin un valor
 Las variables no pueden ser creadas con numeros o caracteres especiales
 Las variables no pueden tener espacios
 
-## 4. Estructura y tipos de datos
+## Estructura y tipos de datos
 undefined
 object
 Null
@@ -103,7 +103,7 @@ Variable de tipo nulo
 
 [mas informacion de las variables](https://developer.mozilla.org/es/docs/Web/JavaScript/Data_structures)
 
-## 5. Introduccion a objetos
+## Introduccion a objetos
 
 ### ¿que es un objeto?
 un objeto puede almacenar una gran cantidad de informacion
@@ -171,7 +171,7 @@ const nuevoObjeto = {
 console.table(nuevoObjeto)
 ```
 
-## 6. Manipulacion de objetos
+## Manipulacion de objetos
 
 
 ### Modificando valores
@@ -254,7 +254,7 @@ console.log(nombreCliente, premium) // Miguel true
 
 >Si hay variables en dos o mas objetos, que se llamen igual, no se puede hacer destructuring, tomando el mismo nombre de las variables porque daria error, si se podria cambiar el nombre dentro del objeto y del destructuring, pero en casos de variables que vengan de API o base de datos no se puede modificar, asi que se crea un alias temporal "_nombre: nombreCliente_" para tengan nombre distinto
 
-## 7. Unir dos o mas objetos en JavaScript
+## Unir dos o mas objetos en JavaScript
 
 ```
 const producto = {
@@ -280,7 +280,7 @@ console.log(nuevoObjeto2)
 
 >**MUY IMPORTANTE** en react no se deben modificar los objetos
 
-## 8. Introduccion a Arrays
+## Introduccion a Arrays
 
 Al igual que un objeto, un array puede tener mucha informacion, al igual que un objeto
 
@@ -297,7 +297,7 @@ console.log(tecnologias[3]) // JavaScript
 
 un arreglo se puede utlizar en carritos de compras
 
-## 9. Manipulacion de los Array
+## Manipulacion de los Array
 
 ```
 const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
@@ -361,7 +361,7 @@ console.log(nuevoArray)
 >
 >Metodos como array.pop y array.shift no se deben utlizar en React, porque modifican el arreglo original
 
-## 10. Destructuring de los Array
+## Destructuring de los Array
 ```
 const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
 const [html, nodejs] = tecnologias
@@ -377,7 +377,7 @@ console.log(var5) // 'NodeJs'
 
 >Se colocan comas con espacios vacios para que imprima el valor que queremos
 
-## 11.Iteradores de arreglos
+## Iteradores de arreglos
 
 **forEach**
 ```
@@ -405,7 +405,7 @@ tecnologias.map(function(tech){
 
 >forEach solo te permite acceder y enlistar cada elemento de un arreglo, en cambio map permite crear un arreglo nuevo
 
-## 11. Funciones - Function Declaration
+## Funciones - Function Declaration
 ```
 function sumar(){
     console.log(2 + 2)
@@ -413,7 +413,7 @@ function sumar(){
 sumar()
 ```
 
-## 12. Funciones - Parametros y parametros default
+## Funciones - Parametros y parametros default
 ```
 function sumar(a, b = 0){
     console.log( a + b)
@@ -423,8 +423,7 @@ sumar(30, 20) // 50
 sumar(20, 40) // 60
 sumar (30) // 30, suma 30 + 0. ya que al no tener un segundo valor, toma el parametro por default declarado al comienzo de la funcion, de 0, si no se hubiese declarado ese valor por default, el resultado seria NaN
 ```
-
-## 13. Funciones que retornan valores
+## Funciones que retornan valores
 ```
 function sumar(a, b = 0){
     return a + b
@@ -441,7 +440,7 @@ const [resultado, holaMundo] = sumar(10, 20)
 console.log(resultado)
 console.log(holaMundo)
 ```
-## 14. Funciones- function Expression
+## Funciones- function Expression
 ```
 const sumar = function(){
     console.log(2+2)
@@ -464,7 +463,7 @@ const sumar = function(){
 } // Uncaught ReferenceError: sumar is not defined
 ```
 
-## 15. Funciones- Arrow Function
+## Funciones- Arrow Function
 
 ```
 const sumar = (a, b) => {
@@ -489,7 +488,7 @@ const resultado = sumar(20)
 console.log(resultado)
 ```
 
-## 16. Arrow function y Array Methods
+## Arrow function y Array Methods
 ```
 const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
 tecnologias.map(function(tech){
