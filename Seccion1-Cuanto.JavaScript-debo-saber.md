@@ -749,5 +749,35 @@ y en el archivo a importar
 
 ## Fetch API
 consumir un servicio o datos en otro servidor
-[{Jsom}Placeholder](https://jsonplaceholder.typicode.com/)
+[{JSON}Placeholder](https://jsonplaceholder.typicode.com/)
+```
+const url= "https://jsonplaceholder.typicode.com/comments"
+fetch(url).then((respuesta) => {
+    console.log(respuesta)
+}) 
+```
 
+```
+const url= "https://jsonplaceholder.typicode.com/comments"
+const consultarAPI = () => {
+    fetch(url)
+    .then(respuesta => respuesta.json())
+    .then((resultado) => {
+        resultado.forEach(comentario => {
+            console.log(comentario)
+        })
+    }) 
+}
+```
+## Fetch API con Async Await
+```
+const url= "https://jsonplaceholder.typicode.com/comments"
+const consultarAPI = async () => {
+    const respuesta = await fetch(url)
+    const resultado = await respuesta.json()
+    resultado.forEach ( comentario => {
+        console.log(comentario)
+    })
+}
+consultarAPI()
+```
