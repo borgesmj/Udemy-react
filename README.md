@@ -234,3 +234,22 @@ console.table(producto)
 Permite modificar las propiedades existentes, pero no permite añadir ni eliminar
 
 ## Destructuring de 2 o mas objetos
+```
+const producto = {
+    nombre: "Tablet",
+    precio: 300,
+    disponible: true
+}
+const cliente = {
+    nombre: "Miguel",
+    premium: true
+}
+
+const {nombre, precio, disponible} = producto
+const {nombre: nombreCliente, premium} = cliente
+
+console.log(nombre, precio, disponible) // Tablet 300 true
+console.log(nombreCliente, premium) // Miguel true
+```
+
+>Si hay variables en dos o mas objetos, que se llamen igual, no se puede hacer destructuring, tomando el mismo nombre de las variables porque daria error, si se podria cambiar el nombre dentro del objeto y del destructuring, pero en casos de variables que vengan de API o base de datos no se puede modificar, asi que se crea un alias temporal "_nombre: nombreCliente_" para tengan nombre distinto
