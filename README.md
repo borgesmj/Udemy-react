@@ -4,16 +4,16 @@
 # ¿Cuanto JavaScript debo saber?
 ## 1. ¿Cuanto JavaScript debo saber?
 No tiene que saberse todo de Javascript para aprender React
-*variables
-*funciones
-*tipos de datos
-*ternarios
-*objetos
-*Promises
-*Arrow functions
-*Async/Await
-*Condicionales
-*Array Methods
+* variables
+* funciones
+* tipos de datos
+* ternarios
+* objetos
+* Promises
+* Arrow functions
+* Async/Await
+* Condicionales
+* Array Methods
 
 ## 2. Variables con LET
 En Javascript se puede utilizar VAR, LET, CONST, aunque var no se usa actualmente
