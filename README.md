@@ -491,8 +491,94 @@ console.log(resultado)
 ## Arrow function y Array Methods
 ```
 const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
-tecnologias.map(function(tech){
-    console.log(tech)
-})
+const nuevoArray = tecnologias.map(tech => {
+    if (tech === 'HTML'){
+        return 'GraphQL'
+    } else {return tech}
+}) 
+console.log(nuevoArray)
+```
 
 ```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const nuevoArray = tecnologias.filter(tech => {
+    return tech !== 'HTML'
+}) 
+console.log(nuevoArray)
+```
+
+## Otros Array Methods utiles
+
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const numeros = [10, 20, 30]
+let nuevoArray
+```
+### Includes
+```
+//comprobar si un elemento existe en un array
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const resultado = tecnologias.includes('GraphQL')
+console.log(resultado) // false
+```
+### Some
+```
+//comprobar si, al menos, un elemento cumple con la condicion
+const numeros = [10, 20, 30]
+const resultado = numeros.some(numero => numero > 15)
+console.log(resultado) // true
+```
+### Find
+```
+//encontrar el primer  elemento que cumple con la condicion
+const numeros = [10, 20, 30]
+const resultado = numeros.find(numero => numero > 15)
+console.log(resultado) // 30
+```
+
+### Every
+```
+//retorna true o false si todos cumplen con una condicion
+const numeros = [10, 20, 30]
+const resultado = numeros.every(numero => numero > 15)
+console.log(resultado) // false
+```
+
+### Reduce
+```
+//retorna una suma de todos los numeros en un array, se puede usar para un carrito de compras 
+//toma dos parametros, el acumulador y al numero de iteracion
+const numeros = [10, 20, 30]
+const resultado = numeros.reduce((total, numero) => numero + total, 0) //0 es el numero a iniciar
+console.log(resultado) // 60
+```
+
+### Filter
+//crea un nuevo array basado en una condicion
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const nuevoArray = tecnologias.filter(tech => {
+    return tech !== 'NodeJs'
+}) 
+console.log(nuevoArray)
+```
+
+### ForEach
+//solo sirve para iterar
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+tecnologias.forEach( tech => console.log(tech)) //HTML CSS JavaScript React NodeJs
+```
+
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+tecnologias.forEach( (tech, index) => console.log(index)) //1 2 3 4 5
+```
+
+### Map
+```
+const tecnologias = ['HTML', 'CSS', 'JavaScript', 'React', 'NodeJs']
+const arrayMap = tecnologias.map(tech => tech)
+console.log(arrayMap)
+```
+[Para conocer que metodo muta o que no](https://doesitmutate.xyz/).
