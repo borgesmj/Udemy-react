@@ -26,3 +26,11 @@ Create react app es una herramienta que ellos habian diseñado para aprender Rea
 
 [server components](https://es.react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023#react-server-components)
 
+Programas requeridos para Trabajar con React y Vite
+
+* Node js [mas informacion sobre Node.js](https://developer.mozilla.org/es/docs/Learn/Server-side/Express_Nodejs/Introduction#%C2%BFqu%C3%A9_son_express_y_node)
+[descargar](https://nodejs.org/es)
+
+* Powersheel: una terminal de comandos 
+[descargar](https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-windows?view=powershell-7.3)
+
