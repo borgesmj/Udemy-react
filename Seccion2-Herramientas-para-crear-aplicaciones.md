@@ -85,5 +85,4 @@ function App(){
 }
 ```
 
->en el caso anterior, el div es el elemento padre, o el elemento en el nivel máximo.
-
+>en el caso anterior, el div es el elemento padre, o el elemento en el nivel máximo y solo está permitido uno solo por _return_.
