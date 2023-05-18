@@ -9,22 +9,22 @@ Existen muchas formas de crear una aplicacion en React, incluso puedes crear tu 
 * Hydrogen (esta es exclusiva de shoppify)
 
 Opciones ya no utilizadas
-Create React app
-Gatsby
+* Create React app
+* Gatsby
 
 ## Recomendaciones por parte del equipo de react
-el equipo de React ha menncionado en su documentacion que recomiendan Next.js o Remix para nuevos proyectos
+El equipo de React ha menncionado en su documentacion que recomiendan Next.js o Remix para nuevos proyectos
 
-¿Ya no se debe usar Vite?
+#### ¿Ya no se debe usar Vite?
 Aun se recomienda, solo debes tener en cuenta que con Vite tendras que instalar las dependencias manualmente, dependencias para Routing, Consultas HTTPP y mas
 
-¿Por que Next.js o Remix son las mejores recomendaciones?
+#### ¿Por que Next.js o Remix son las mejores recomendaciones?
 
 El equipo de react estuvo trabajando por años con Server Components. Server Components esta disponible desde la v18 
 
 Create react app es una herramienta que ellos habian diseñado para aprender React pero para hacer que soporte Server Components iba a requerir mucho tiempo
 
-[server components](https://es.react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023#react-server-components)
+[Server Components](https://es.react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on-march-2023#react-server-components)
 
 ## Programas requeridos para Trabajar con React y Vite
 
@@ -41,7 +41,7 @@ abrir carpeta de escritorio con `cd desktop`
 
 2. Introducir el nombre del proyecto y elegir que tecnologia se estará usando
 
->Vite utiliza varias tecnologias(JavasCript Vanilla, Vue, React, preact, lit, scelte)
+>Vite utiliza varias tecnologias(JavasCript Vanilla, Vue, React, preact, lit, svelte)
 
 3. Se crea la carpeta, y entramos a esa carpeta por medio de `cd`
 
@@ -54,7 +54,7 @@ abrir carpeta de escritorio con `cd desktop`
 ## Estructura basica de un proyecto de vite
 Todas las [herramientas](https://github.com/borgesmj/Udemy-react/blob/main/Seccion2-Herramientas-para-crear-aplicaciones.md#opciones-modernas-para-crear-aplicaciones-en-react) tienen su propia estructura, pero todas comparte algo en comun, es la carpeta `src` y es donde se guardan todos los componentes de React y los modulos de CSS.
 
-El archiv _App.jsx_ es el archivo principal donde se estará trabajando, asi que se borra todo el contenido dejando un solo elemento HTML padre.
+El archivo _App.jsx_ es el archivo principal donde se estará trabajando, asi que se borra todo el contenido dejando un solo elemento HTML padre.
 
 ## ¿Que es JSX?
 
